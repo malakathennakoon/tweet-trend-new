@@ -1,3 +1,4 @@
+def registry = 'https://dnvworld.jfrog.io'
 pipeline {
     agent {
         node {
@@ -24,8 +25,8 @@ environment {
         }
         }*/
 
-        def registry = 'https://dnvworld.jfrog.io'
-         stage("Jar Publish") {
+        
+        stage("Jar Publish") {
         steps {
             script {
                     echo '<--------------- Jar Publish Started --------------->'
